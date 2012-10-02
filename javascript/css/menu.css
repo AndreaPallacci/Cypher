@@ -1,0 +1,24 @@
+#menu{
+    text-align: center;
+}
+
+#menu ul{
+    width: 450px; 
+    margin: 0 auto; 
+    list-style-type:none;
+}
+
+#menu li{
+    float: left;
+    width: 100px;
+    
+}
+
+.submenu li {
+    display:none;
+}
+
+#menu a:hover { 
+    color:red;
+}
+
