@@ -1,24 +1,57 @@
 #menu{
     text-align: center;
+    border: 1px solid #ccc;
+}
+
+#menu a{
+    text-decoration:none;
 }
 
 #menu ul{
+    list-style-type:none;
+
+    }
+
+#menu ul#firstmenu{
     width: 450px; 
     margin: 0 auto; 
-    list-style-type:none;
+    border: 1px solid blue;
 }
 
 #menu li{
     float: left;
-    width: 100px;
-    
+    border: 1px solid orange;
 }
 
 .submenu li {
     display:none;
+    margin:0;
+    padding:0;
 }
+
+#menu a {
+    width:100px;
+    display:block;
+    }
 
 #menu a:hover { 
     color:red;
 }
 
+#menu li:hover .submenu li{ 
+    display:block;
+    float:none;
+
+}
+#menu li:hover .submenu li a{ 
+    color:green;
+    }
+#menu li:hover .submenu li a:hover {
+    color:purple;
+}
+
+.submenu {
+    padding:0;
+    margin:0; /* ie7 sucks*/
+    width:100px;
+}
