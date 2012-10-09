@@ -4,10 +4,62 @@
         <meta charset="UTF-8">
         <title>My Web Page</title>
         <script>
-            alert('hello world!');
-            var giorni = ['lun','mar'];
+//            var day1 = 'mon';
+//            var day2 = 'tue';
+//            var day3 = 'wed';
+//            var day4 = 'thu';
+//            var day5 = 'fri';
+//            var day6 = 'sat';
+//            var day7 = 'sun';
 
+
+            //definisco l'array
+            var giorni = ['lun','mar','mer'];
+
+//            alert(giorni);
+//            document.write(giorni);
+            
+//            alert(giorni[0]);
+//            alert(giorni[1]);
+//            document.write(giorni[2]);
+//            alert(giorni[3]);
+
+            giorni[3] = 'gio';
+//            alert(giorni);
+
+             
+            giorni[1] = 'martedi';
             alert(giorni);
+
+            //altro modo per dichiarare gli array
+            var days = new Array();
+            alert(days);
+            //document.write(days);
+//            days[0] = 'mon';
+            alert(days);
+
+            //aggiungo elemento 
+            alert(days.length); //stampa 1
+
+            days[days.length] = 'tue';
+            alert(days);
+
+            days.push('wed');
+            alert(days);
+
+            days.push('thu','fri','sat','sun');
+            alert(days);
+
+            //aggiungo elemento all'inizio
+            days.unshift('mon');
+            alert(days);
+
+            //rimuovo elemento finale
+            days.pop();
+            alert(days);
+            
+            days.shift();
+            alert(days);
 
         </script>
     </head>
