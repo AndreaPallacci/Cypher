@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+    <script>
+    function personaggi() {
+        var personaggi = document.getElementsByTagName('p');
+        alert(personaggi); 
+        alert(personaggi[0]); 
+        alert(personaggi[0].innerHTML); 
+        personaggi[0].innerHTML = 'PAPERONE';
+    }
+    </script>
+</head>
+<body>
+     
+    <p>pippo</p>
+    <p>pluto</p>
+    <p>paperino</p>
+    <a onclick="personaggi()">personaggi</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+    </head>
+    <body>
+        <script>
+            function Veicolo(passeggeri) {
+                  this.velocita = 0;
+                  this.passeggeri = 0;
+                  if(passeggeri > 0) {
+                     this.passeggeri = passeggeri;
+                  }
+            }
+
+            var auto = new Veicolo(1);
+
+            for (v in auto ) {
+                alert(v);
+            }
+              alunni = new Array("pippo", "pluto"); 
+
+              for (prop in alunni) {
+                  document.write(alunni[prop]+"<br/>");} 
+        </script>
+    </body>
+</html>
+

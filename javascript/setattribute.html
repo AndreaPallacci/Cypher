@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+        function changeLink()
+        {
+            var link = document.getElementById('myAnchor');
+            //link.innerHTML="W3Schools";
+            if (link.innerHTML == 'Microsoft') {
+                document.getElementById('myAnchor').innerHTML="W3Schools";
+                document.getElementById('myAnchor').href="http://www.w3schools.com";
+                document.getElementById('myAnchor').target="_blank";
+            } else {
+                //rimetto microsoft
+                document.getElementById('myAnchor').innerHTML="Microsoft";
+                document.getElementById('myAnchor').href="http://www.microsoft.com";
+                document.getElementById('myAnchor').target="";
+            }
+
+        }
+    </script>
+</head>
+<body>
+     
+    <a id="myAnchor" href="http://www.microsoft.com">Microsoft</a>
+    <input type="button" onclick="changeLink()" value="Change link">
+
+</body>
+</html>

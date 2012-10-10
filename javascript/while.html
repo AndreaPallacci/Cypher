@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+        <script>
+       function cambia() {
+           var pippo = document.getElementsByTagName('p');
+           var n = 0;
+           while (n<=pippo.length) {
+               //n++;
+               pippo[n].innerHTML = 'pluto';
+               n=n+2;
+           }
+       }
+    </script>
+</head>
+<body>
+
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <p>pippo</p>
+    <a onclick="cambia()">CAMBIA</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+
+    <script>
+        function getValue1(){
+            var x=document.getElementById("myHeader1");
+            score = x.innerHTML;
+                if (score == 10) {
+                    alert('hai vinto');
+                } else {
+                    alert('hai perso');
+                }
+            }
+        function getValue2(){
+                var x=document.getElementById("myHeader2");
+                score = x.innerHTML;
+                if (score == 10) {
+                    alert('hai vinto');
+                } else {
+                    alert('hai perso');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="myHeader1" onclick="getValue1()">10</h1>
+        <h1 id="myHeader2" onclick="getValue2()">11</h1>
+
+    </body>
+</html>
+
