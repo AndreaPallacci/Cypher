@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+        <style>
+            #myHeader {
+                background-color: red;
+                color: green;
+            }
+        </style>
+        <script>
+           // function changeStyle() {
+            //    var element = document.getElementById('myHeader');
+            //    alert(element.innerHTML);
+           // }
+            //window.onload = changeStyle();
+            window.onload = function () {
+                var element = document.getElementById('myHeader');
+                //alert(element.innerHTML);
+                alert(element.style);
+                element.style.color = 'orange';
+                element.style.backgroundColor = 'orange';
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="myHeader">Pippo</h1>
+
+    </body>
+</html>
+

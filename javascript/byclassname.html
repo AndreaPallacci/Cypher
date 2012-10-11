@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+    </head>
+    <body>
+
+        <p class="pippo">pippo</p>
+        <p class="pluto">pluto</p>
+        <p class="pippo">pippo</p>
+        <p class="pluto">pluto</p>
+        <p class="pippo">pippo</p>
+        <script>
+        //su ie<9 non funziona 
+        var pluto = document.getElementsByClassName('pluto');
+        for(i=0;i<pluto.length;i++) {
+            alert(pluto[i].innerHTML);
+        }
+
+        </script>
+    </body>
+</html>
+

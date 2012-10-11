@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+    </head>
+    <body>
+
+        <p class="class-pippo">pippo</p>
+        <p class="class-pluto">pluto</p>
+        <p class="class-pippo">pippo</p>
+        <p class="class-pluto">pluto</p>
+        <p class="class-pippo">pippo</p>
+        <script>
+        var p = document.getElementsByTagName('p');
+        for(i=0;i<p.length;i++) {
+            //alert(p[i].className);
+            if (p[i].className=='class-pluto') {
+                alert(p[i].innerHTML);
+            }
+
+        }
+
+        </script>
+    </body>
+</html>
+
