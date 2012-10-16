@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+        <script>
+
+            function pippo() {
+                alert('pippo');
+                alert('pluto');
+                alert('paperino');
+                alert('topolino');
+            }
+            pippo();
+
+            result = window.confirm('lo vuoi rifare?');
+            if(result) {
+                pippo();
+            } else {
+                alert('ok basta');
+            }
+
+            window.setTimeout(function () {window.location = 'http://magni.me'; }, 2000); 
+//window.setTimeout(function () {alert('pippo'); }, 2000); 
+
+
+
+/*            function redirect() {
+                window.location = 'http://magni.me';
+            }
+            window.setTimeout(redirect(), 2000); */
+        </script>
+</head>
+<body>
+    Mi sono spostato qui: <a href="http://magni.me">qui</a>
+</body>
+</html>
