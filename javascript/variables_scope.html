@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+        <script>
+            //non cambia il valore ad a globalmente
+            function cambiaA() {
+                var a;
+                a = 10;
+                alert(a);
+            }
+
+            //cambia il valore ad a globale
+            function cambiaAA() {
+                a = 10;
+                alert(a);
+            }
+
+            //cambio il valore attraverso il valore di ritorno
+            function cambiaAAA(a) {
+                a = 10;
+                alert(a);
+                return a;
+            }
+
+            var a = 100;
+            alert(a);
+//            cambiaA();
+//            alert(a);
+//            cambiaAA();
+//            alert(a);
+
+            a = cambiaAAA(a);
+            //cambiaAAA(a);
+            alert(a);            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+

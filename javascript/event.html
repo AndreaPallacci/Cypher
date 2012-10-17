@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+        <script>
+
+        function posizione (e) {
+            alert('Il mouse è alla posizione ' + e.screenX + ', ' + e.screenY +  ' dello schermo');
+        }
+        </script>
+</head>
+<body>
+    Event<br/>
+
+    <a href="pagina.html" onmouseover="alert('Il mouse è alla posizione ' + event.screenX + ', ' + event.screenY +  'dello schermo');" >link</a>
+
+    <a href="pagina.html" onmouseover="posizione(event);">link</a>
+</body>
+</html>
