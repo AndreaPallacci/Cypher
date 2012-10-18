@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+</head>
+<body>
+    <input type="button" value="Pippo" id="pippo" />
+
+    <script type="text/javascript">
+
+        var pippo = document.getElementById("pippo");
+
+        pippo.addEventListener("click", alertPippo, false);
+        pippo.addEventListener("click", alertHello, false);
+
+                function alertPippo() {
+                        alert("pippo");
+                }
+                function alertHello() {
+                        alert("hello");
+                }
+
+    </script>
+</body>
+</html>
