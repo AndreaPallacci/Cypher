@@ -6,7 +6,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $('[class]').each(function() {
+/*                $('[class]').each(function() {
                     alert($(this).text());
                 });
     
@@ -16,6 +16,27 @@
                 });
                 
                 $('[name*="man"]').each(function() {
+                    alert($(this).text());
+                });
+
+
+                $('[name~="man"]').each(function() {
+                    alert($(this).text());
+                });
+
+                $('[name$="letter"]').each(function() {
+                    alert($(this).text());
+                });
+
+                $('[name="letter"]').each(function() {
+                    alert($(this).text());
+                });
+                
+                $('div[name!="letter"]').each(function() {
+                    alert($(this).text());
+                });*/
+
+                $('div[name^="letter"]').each(function() {
                     alert($(this).text());
                 });
 
@@ -35,6 +56,23 @@
         <div name="milkman">DIV2</div>
         <div name="lettermans">SPAN1</div>
         <div name="newmilk">SPAN2</div>
+        
+        <div name="man-news">DIV1</div>
+        <div name="milk man">DIV2</div>
+        <div name="lettermans">SPAN1</div>
+        <div name="newmilk">SPAN2</div>
+        
+        <div name="newsletter">DIV1</div>
+        <div name="milkman">DIV2</div>
+        <div name="letterman">SPAN1</div>
+        <div name="pippo">SPAN2</div>
+        
+        <div name="newsletter">DIV1</div>
+        <div name="milkman">DIV2</div>
+        <div name="letter">SPAN1</div>
+        <div name="pippo">SPAN2</div>
+
+
     </body>
 </html>
 

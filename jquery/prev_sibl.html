@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+    <div>div (doesn't match since before #pippo)</div>
+    <span id="pippo">span#prev</span>
+    <div>div sibling</div>
+    <div>div sibling <div id="small">div niece</div></div>
+    <span>span sibling (not div)</span>
+    <div>div sibling</div>
+    <script>$("#pippo ~ div").css("border", "3px groove blue");</script>
+    </body>
+</html>

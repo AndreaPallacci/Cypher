@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("label +  input").css("border", "2px dotted red")
+            });
+        </script>
+    </head>
+    <body>
+    
+        <form>
+         <div>Form is surrounded by the green outline</div>
+         <label>Child:</label>
+         <input name="name" />
+
+         <fieldset>
+           <label>Grandchild:</label>
+           <input name="newsletter" />
+        </fieldset>
+
+        </form>
+        Sibling to form: <input name="none" />
+    </body>
+</html>
+
