@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("td:first-child").css("background-color", "grey");
+                $("td:nth-child(odd)").css("background-color", "orange");
+
+                $("div span:first-child").css("text-decoration", "underline");
+                $("div span:last-child").css("text-decoration", "overline");
+                $("div span:only-child").css("text-decoration", "line-through");
+            });
+        </script>
+        <style>
+            td {color:green;}
+
+        </style>
+    <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td style="color:orange">TD #0</td>
+                <td><span>TD #1i</span></td>
+                <!--<td style="display:none" id="secondo">TD #2</td>-->
+                <td id="secondo">TD #2</td>
+            </tr>
+            <tr><td>TD #3</td>
+                <td>TD #4</td>
+                <td>TD #5</td>
+            </tr>
+        <tr><td>TD #6</td><td>TD #7</td><td>TD #8</td></tr> 
+        <tr><td>TD #9</td><td>TD #10</td><td>TD #11</td></tr> 
+        <tr><td>TD #12</td><td>TD #13</td><td>TD #14</td></tr> 
+    </table>
+
+    <hr/>
+    <br/>
+      <div>
+              <span>John,</span>
+              <span>Karl,</span>
+              <span>Brandon</span>
+
+      </div>
+      <div>
+      <span>Glen,</span>
+      <span>Tane,</span>
+      <span>Ralph</span>
+      </div>
+      <div>
+          <span>Glen,</span>
+      </div>
+    </body>
+</html>
+

@@ -1,0 +1,13 @@
+/*#secondo {display:none;}*/
+
+.figo {
+    color:green;
+}
+.molto {
+    font-size:20px;
+}
+.error {
+    color:red;
+    border:1px dotted orange;
+}
+
