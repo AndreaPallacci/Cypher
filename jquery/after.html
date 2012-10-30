@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery</title>
+        <style>
+            .wrapper {border: 1px solid red;}
+        </style>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var pippo = '<div class="wrapper"/>';
+
+                $('.inner').after(pippo);
+                $('<p>pluto</p>').insertAfter('.inner');
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Greetings</h2>
+        <div class="container">
+          <div class="inner">Hello</div>
+        <div class="inner">Goodbye</div>
+</div>
+</body>
+</html>
+
