@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5</title>
+        <script src="modernizr.js"></script>
+        <script>
+        if (!Modernizr.inputtypes.number) {
+          // no native support for type=number fields
+            // maybe try jQuery or some other JavaScript framework
+            //            http://jqueryui.com/spinner/
+            alert('unsopport');
+        }
+      </script>
+      </head>
+      <body>
+          <form>
+             <input name="n" type="number" min="0" max="10" step="2" value="6">
+             <input type="submit" value="Go">
+          </form>
+      </body>
+</html>
+
+                           
