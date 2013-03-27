@@ -4,63 +4,60 @@
         <meta charset="UTF-8">
         <title>My Web Page</title>
         <script>
-//            var day1 = 'mon';
-//            var day2 = 'tue';
-//            var day3 = 'wed';
-//            var day4 = 'thu';
-//            var day5 = 'fri';
-//            var day6 = 'sat';
-//            var day7 = 'sun';
-
-
-            //definisco l'array
-            var giorni = ['lun','mar','mer'];
-
-//            alert(giorni);
-//            document.write(giorni);
             
-//            alert(giorni[0]);
-//            alert(giorni[1]);
-//            document.write(giorni[2]);
-//            alert(giorni[3]);
+        //var day1 = 'mon';
+        //var day2 = 'tue';
+        //var day3 = 'wed';
+        //var day4 = 'thu';
+        //var day5 = 'fri';
+        //var day6 = 'sat';
+        //var day7 = 'sun';
 
-            giorni[3] = 'gio';
-//            alert(giorni);
 
-             
-            giorni[1] = 'martedi';
-            alert(giorni);
+        //definisco l'array
+        var giorni = ['lun','martedi','mer'];
 
-            //altro modo per dichiarare gli array
-            var days = new Array();
-            alert(days);
-            //document.write(days);
-//            days[0] = 'mon';
-            alert(days);
+        //stampo in alert array giorni
+        alert(giorni);    
+        //stampo primo elemento array, elemento di indice 0 
+        alert(giorni[0]);
+        //stampo terzo elemento array giorni
+        alert(giorni[2]);
 
-            //aggiungo elemento 
-            alert(days.length); //stampa 1
+        //aggiungere un elemento
+        giorni[3] = 'gio';
 
-            days[days.length] = 'tue';
-            alert(days);
+        //sostituisco giorno 
+        giorni[2] = 'mar';
 
-            days.push('wed');
-            alert(days);
+        //stampo numero elementi dell'array
+        alert(giorni.length);
+        //aggiungo elemento 
+        giorni[giorni.length] = 'ven';
+        var output = giorni[1]+ '-' + giorni[3];
+        alert(output);
 
-            days.push('thu','fri','sat','sun');
-            alert(days);
+        //aggiungo elemento con il metodo push
+        giorni.push('sab');
+        //aggiungo più elementi con il metodo push
+        giorni.push('dom','otherday');
+        alert(giorni);
 
-            //aggiungo elemento all'inizio
-            days.unshift('mon');
-            alert(days);
-
-            //rimuovo elemento finale
-            days.pop();
-            alert(days);
-            
-            days.shift();
-            alert(days);
-
+        //tolgo ultimo elemento classe1 e lo metto come ultimo elemento in classe2
+        var classe1 = ['matteo', 'marco', 'gino', 'antonio'];
+        var classe2 = ['gianni', 'andrea'];
+        alunno = classe1.pop();
+        classe2.push(alunno);
+        alert(classe1);    
+        alert(classe2);
+           
+        //tolgo primo elemento classe1 e lo metto come primo elemento in classe 2
+        var classe1 = ['matteo', 'marco', 'gino', 'antonio'];
+        var classe2 = ['gianni', 'andrea'];
+        alunno = classe1.shift();
+        classe2.unshift(alunno);
+        alert(classe1);    
+        alert(classe2);
         </script>
     </head>
     <body>
