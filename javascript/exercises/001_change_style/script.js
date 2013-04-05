@@ -70,3 +70,31 @@ function changePhoto3() {
         img.style.width = img_min_width;
     }
 }
+
+
+function addBorder1() {
+    var image = document.getElementById('photo1');
+    image.style.border = '2px solid green';
+    var image = document.getElementById('photo2');
+    image.style.border = '';
+    var image = document.getElementById('photo3');
+    image.style.border = '';
+}
+
+function addBorder2() {
+    var image = document.getElementById('photo2');
+    image.style.border = '2px solid green';
+    var image = document.getElementById('photo1');
+    image.style.border = '';
+    var image = document.getElementById('photo3');
+    image.style.border = '';
+}
+
+function addBorder3() {
+    var image = document.getElementById('photo3');
+    image.style.border = '2px solid green';
+    var image = document.getElementById('photo1');
+    image.style.border = '';
+    var image = document.getElementById('photo2');
+    image.style.border = '';
+}
