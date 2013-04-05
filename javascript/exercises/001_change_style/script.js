@@ -1,3 +1,4 @@
+
 //Cambia lo stile a rosso
 function changeToRed() {
     var body = document.getElementsByTagName('body');
@@ -27,29 +28,45 @@ function originalFontSize() {
     content.style.fontSize = '14px';
 }
 
+//Cambia immagini
+var img_max_width = '400px';
+var img_min_width = '50px';
+
 function changePhoto1() {
     var img = document.getElementById('photo1');
-    img.style.width = '300px';
-    var img = document.getElementById('photo2');
-    img.style.width = '50px';
-    var img = document.getElementById('photo3');
-    img.style.width = '50px';
+    if (img.style.width == img_max_width) {
+        img.style.width = img_min_width;
+    } else {
+        img.style.width = img_max_width;
+        var img = document.getElementById('photo2');
+        img.style.width = img_min_width;
+        var img = document.getElementById('photo3');
+        img.style.width = img_min_width;
+    }
 }
 
 function changePhoto2() {
     var img = document.getElementById('photo2');
-    img.style.width = '300px';
-    var img = document.getElementById('photo1');
-    img.style.width = '50px';
-    var img = document.getElementById('photo3');
-    img.style.width = '50px';
+    if (img.style.width == img_max_width) {
+        img.style.width = img_min_width;
+    } else {
+        img.style.width = img_max_width;
+        var img = document.getElementById('photo1');
+        img.style.width = img_min_width;
+        var img = document.getElementById('photo3');
+        img.style.width = img_min_width;
+    }
 }
 
 function changePhoto3() {
     var img = document.getElementById('photo3');
-    img.style.width = '300px';
-    var img = document.getElementById('photo2');
-    img.style.width = '50px';
-    var img = document.getElementById('photo1');
-    img.style.width = '50px';
+    if (img.style.width == img_max_width) {
+        img.style.width = img_min_width;
+    } else {
+        img.style.width = img_max_width;
+        var img = document.getElementById('photo2');
+        img.style.width = img_min_width;
+        var img = document.getElementById('photo1');
+        img.style.width = img_min_width;
+    }
 }
