@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+
+        <script>
+            function sum(first, second) {
+                result = first + second;
+                return result;
+            }        
+           
+            function sub(first,second) {
+                result =  first - second;
+                return result;
+            }
+     
+            execute = confirm('facciamo somma?');
+            if(execute) {
+                f = prompt('inserisci il primo numero');
+                s = prompt('inserisci il secondo numero');
+                f = parseInt(f);
+                s = parseInt(s);
+                total = sum(f,s);
+                alert(total);
+            } else {
+                alert('grazie alla prossima');
+            }
+            
+            execute = confirm('facciamo la sottrazione?');
+            if(execute) {
+                f = prompt('inserisci il primo numero');
+                s = prompt('inserisci il secondo numero');
+                f = parseInt(f);
+                s = parseInt(s);
+                total = sub(f,s);
+                alert(total);
+            } else {
+                alert('grazie alla prossima');
+            }
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
+
