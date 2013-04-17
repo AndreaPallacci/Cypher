@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cambia stile</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <div id="header">
+        <h1>Cambiamo lo stile</h1>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li><a onclick="changeStyle('red', 'blue')">Red</a></li>
+            <li><a onclick="changeStyle('blue','#ccc')">Blue</a></li>
+            <li><a onclick="changeStyle('green','#000')">Green</a></li>
+            <li><a onclick="changeStyle('#000','green')">Black</a></li>
+        </ul>
+        <ul>  
+            <li><a onclick="changeFont('16px')">A+</a></li>
+            <li><a onclick="changeFont('14px')">A</a></li>
+            <li><a onclick="changeFont('12px')">A-</a></li>
+       </ul>
+    </div>
+    <div id="content">
+        <p>
+Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.
+        </p>
+        <div id="gallery">
+            <img id="photo1" onclick="changePhoto('photo1')" src="img/7873834782_40b1d9f4c3.jpg"/>
+            <img id="photo2" onclick="changePhoto('photo2')" src="img/8320641549_9d270fcdca.jpg"/>
+            <img id="photo3" onclick="changePhoto('photo3')" src="img/7888433782_4ae24d4ccb.jpg"/>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+    </body>
+</html>
+

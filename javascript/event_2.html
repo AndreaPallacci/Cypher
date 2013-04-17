@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>My WEb PAge</title>    
+        <script>
+
+        function posizione (e) {
+            alert('Il mouse è alla posizione ' + e.screenX + ', ' + e.screenY +  ' dello schermo');
+        }
+        
+        function change(id_element) {
+            element = document.getElementById(id_element);
+            element.style.color = 'red';
+        }
+        
+    function change_color(e) {
+        e.target.style.color = 'green';
+    }
+
+        </script>
+</head>
+<body>
+    <!-- Event<br/> -->
+
+    <a href="pagina.html" onmouseover="alert('Il mouse è alla posizione ' + event.screenX + ', ' + event.screenY +  'dello schermo');" >link</a>
+
+    <a href="pagina.html" onmouseover="posizione(event);">link</a>
+
+    <br/>
+    <h3 id="titolo" onclick="change('titolo');">Titolo</h3>
+    
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+    <h3 onclick="change_color(event)">Titolo</h3>
+
+</body>
+</html>
