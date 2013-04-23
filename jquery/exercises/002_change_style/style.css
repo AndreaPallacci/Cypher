@@ -1,0 +1,35 @@
+body {
+    color:red;
+}
+
+#content {
+    font-size:14px;
+}
+
+#gallery img {
+    width:50px;    
+}
+
+#gallery img:hover {
+    border:2px solid green;
+}
+
+.red {
+    color:red;
+    background-color:blue;
+}
+
+.blue {
+    color:blue;
+    background-color:#ccc;
+}
+
+.green {
+    color: green;
+    background-color: black;
+}
+
+.black {
+    color: black;
+    background-color: green;
+}
