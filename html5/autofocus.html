@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8" />
               <title>HTML5</title>
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script>
+            $(document).ready(function() {
+              if (!("autofocus" in document.createElement("input"))) {
+                $("#q").focus();
+              }
+            });
+            </script>
       </head>
       <body>
           <form>
                 <input name="b">
-                <input name="q" autofocus>
+                <input name="q" id="q" autofocus>
                 <input name="c">
                 <input type="submit" value="Search">
          </form>
